@@ -9,7 +9,7 @@ public class Client {
 	
 	public static void main( String[] args) {
 		
-		ICICIBank bank = new ICICIBank();
+		Bank bank = new ICICIBank();
 		
 		try {
 			System.out.println("Creating Account:");
@@ -37,7 +37,7 @@ public class Client {
 		}
 		try {
 			System.out.println("Transferring Fund:");
-			int[] a = bank.fundTransfer(101,101,400);
+			int[] a = bank.fundTransfer(100,101,400);
 			System.out.println("New Balance of Account Number 100 = "+a[0]
 					+"\nNew Balance of Account Number 101 = "+a[1]);
 			
